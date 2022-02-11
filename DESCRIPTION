@@ -1,0 +1,27 @@
+Package: stocktrader
+Title: Download historical data for your favourite stocks to calculate and predict their movement
+Version: 0.0.0.9000
+Authors@R: 
+    person(given ="Sitendu",
+    family = "Goswami",
+    email=  "sitendugoswami@gmail.com",
+    role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8804-3133 "))
+Maintainer: Sitendu Goswami <sitendugoswami@gmail.com>           
+Description: This package is my feeble effort to cobble together the impressive work of quant stalwarts who created packages like TTR, BatchGetSymbols and Prophet. 
+              This package can be used to pick a stock of their choice and understand some fundamental and technical characteristics without deeply delving into the programming aspect of things. 
+             This package has been created to shave off time from my analysis workflow and I hope that it will help others like me. This package is still in its early stages and comes with two simple functions. 
+             I hope to add additional functionality to the same as we move forward.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: R (>= 3.1.0)
+Imports:
+        tidyverse (>= 1.3.1),
+        BatchGetSymbols (>= 2.6.1),
+        prophet (>= 1.0),
+        quantmod (>= 0.4.18),
+        TTR (>= 0.24.3),
+        janitor(>= 2.1.0),
+        dplyr(>= 1.0.8)
